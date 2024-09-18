@@ -1,10 +1,10 @@
-import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
-import mock6 from "../img/mock6.png"
+import self from "../img/self.webp"
+import mock1 from "../img/mock1.webp"
+import mock2 from "../img/mock2.webp"
+import mock3 from "../img/mock3.webp"
+import mock4 from "../img/mock4.webp"
+import mock5 from "../img/mock5.webp"
+import mock6 from "../img/mock6.webp"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
