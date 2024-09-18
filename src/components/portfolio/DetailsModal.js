@@ -80,7 +80,6 @@ const ModalContent = ({ id, title, description, features, technologies }) => {
 }
 
 export default function DetailsModal(props) {
-    const { title, description, features, technologies } = props;
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
