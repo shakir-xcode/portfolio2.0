@@ -71,10 +71,16 @@ export const info = {
 
     ],
     bio: `I am a dedicated web developer with a strong foundation in Information Technology. My academic background includes Bachelor's and Master's in Information Technology. I specialize in full-stack development, with a focus on the MERN stack. Through practical experience and academic pursuits, I have developed a solid understanding of modern web technologies. I am eager to apply my skills to challenging projects and contribute to innovative solutions.`,
+
+    experience: `During my internship at Mir Web Solutions, I had the opportunity to work on developing and delivering websites for various clients. I was involved in creating user-friendly and responsive websites, collaborating with designers and project managers to ensure that client needs were met.
+
+In addition to my core development work, I also gained experience with WordPress and related tools, allowing me to broaden my skill set and better understand content management systems. This internship taught me valuable time management skills, as I worked on multiple projects simultaneously, meeting client deadlines and managing development priorities effectively.
+
+Overall, the experience helped me grow as a developer and prepared me for a full-time role in the industry.`,
     skills:
     {
-        proficientWith: ['html5', 'css3', 'javascript', 'react.js', 'redux', 'tailwindcss', 'next.js', 'node.js', 'express.js', 'mongodb', 'SQL', 'git'],
-        exposedTo: ['java', 'python', 'c++', 'php']
+        proficientWith: ['HTML', 'CSS', 'Javascript', 'React.js', 'Redux', 'Tailwindcss', 'Next.js', 'Node.js', 'Express.js', 'Mongodb', 'SQL', 'Git', 'Wordpress', 'Elementor'],
+        exposedTo: ['Javascript (proficient)','Java', 'Python', 'C++']
     }
     ,
     hobbies: [

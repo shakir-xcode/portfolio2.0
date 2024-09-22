@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Style from './Home.module.scss';
 import me from '../../img/self.webp';
 import classNames from 'classnames';
@@ -6,8 +6,43 @@ import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
+import { sendMessage } from "../../api/webFormsApi";
+import { getIPV4, getIPV6 } from "../../api/ipApi";
 
 export default function Home({ innerRef }) {
+
+   const gatherUserInfo = async () => {
+    let ipv4, ipv6;
+    try {
+      ipv4 = await getIPV4();
+      ipv6 = await getIPV6();
+    } catch (error) {
+      console.log(error);
+    }
+    return {
+      userType: "Site Visitor",
+      userAgent: navigator.userAgent,
+      width: window.screen.width,
+      height: window.screen.height,
+      platform: navigator?.userAgentData?.platform || navigator.platform,
+      mobile:
+        navigator?.userAgentData?.mobile ||
+        window.matchMedia("(max-width: 560px)").matches,
+      ipv4,
+      ipv6,
+      timestamp: new Date().toString(),
+    };
+  };
+
+  useEffect(() => {
+    const id = setTimeout(async () => {
+       sendMessage(await gatherUserInfo());
+    }, 0);
+
+    return () => {
+      clearTimeout(id);
+    };
+  }, []);
 
    return (
       <Box ref={innerRef} component={'main'} display={'flex'} flexDirection={{ xs: 'column', md: 'row' }} alignItems={'center'}

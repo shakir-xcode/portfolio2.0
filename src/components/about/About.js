@@ -19,6 +19,17 @@ export default function About({ innerRef }) {
         </>;
     }
 
+	function experienceText() {
+        return <>
+            <p><span style={{ color: info.baseColor }}>{firstName}{info.lastName.toLowerCase()} $</span> cat
+                experience{firstName} </p>
+            <p><span style={{ color: info.baseColor }}>experience{firstName} <span
+                className={Style.green}>(03 Month Internship at Mir Web Solutions)</span> $ </span>
+                {info.experience}
+            </p>
+        </>;
+    }
+
     function skillsText() {
         return <>
             <p><span style={{ color: info.baseColor }}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills/tools
@@ -53,7 +64,8 @@ export default function About({ innerRef }) {
     return (
         <Box ref={innerRef} display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'} id={'about'}>
             <Terminal text={aboutMeText()} />
-            <Terminal text={skillsText()} />
+	    <Terminal text={experienceText()} />
+	    <Terminal text={skillsText()} />
             {/* <Terminal text={miscText()}/> */}
         </Box>
     )
