@@ -1,4 +1,5 @@
 import self from "../img/self.webp"
+import mock0 from "../img/mock0.webp"
 import mock1 from "../img/mock1.webp"
 import mock2 from "../img/mock2.webp"
 import mock3 from "../img/mock3.webp"
@@ -104,6 +105,30 @@ Overall, the experience helped me grow as a developer and prepared me for a full
         // You can also remove the emojis if you'd like, I just think they look cute :P
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
+        {
+            id: 0,
+            title: "EasyInvoice",
+            description: "EasyInvoice is a user-friendly invoice generator that helps businesses and freelancers create professional invoices effortlessly. Customize details, add taxes, discounts, and terms, and generate invoices in seconds. Keep track of payments, download PDFs, and streamline your billing process with ease.",
+            features: [
+  "Create professional invoices quickly",
+  "Add multiple products/services with rates and quantities",
+  "Automatic calculation of subtotal, tax, discount, and total amount",
+  "Generate and download invoices as PDFs",
+  "Supports multiple currencies",
+  "User-friendly and responsive design"
+],
+            technologies: [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "React.js",
+                "Tailwindcss",
+                "Next.js",
+            ],
+            live: "https://ezy-invoice.vercel.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/shakir-xcode/invoice-generator", // this should be a link to the **repository** of the project, where the code is hosted.
+            image: mock0
+        },
         {
             id: 1,
             title: "Global Talk",
